@@ -33,7 +33,7 @@ $("#Deactivatedronebutton").click(function(){
            $.ajax({ //ajax post request
             method: "POST", //post
             crossDomain: true,
-            url: "http://localhost:3000/activatefly", //api url
+            url: "/activatefly", //api url
             // data: {
             //   link: linkaddressvalue,
             // }, //data is textboxinfo var but it needs to be in object format for the ajax data
@@ -52,7 +52,7 @@ $("#Deactivatedronebutton").click(function(){
            $.ajax({ //ajax post request
             method: "POST", //post
             crossDomain: true,
-            url: "http://localhost:3000/deactivatefly", //api url
+            url: "/deactivatefly", //api url
             // data: {
             //   link: linkaddressvalue,
             // }, //data is textboxinfo var but it needs to be in object format for the ajax data
