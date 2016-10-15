@@ -17,9 +17,6 @@ var http          = require('http'); // Im not sure if I need this I just cant g
 
 var shouldifly = false;
 
-
-
-
 // Use middleware
 app.use( logger( 'dev' ) ); // this allows the loggin into the console
 app.use( bodyParser.json() ); //parses the json
@@ -39,16 +36,19 @@ app.get('/', function(req,res){
 app.post('/activatefly', function(req,res){
 
     shouldifly = true;
+    console.log("activate fly route hit");
     console.log(shouldifly);
-     res.json({sucess:true,message:'variable changed to true'});
-
-
+     res.json({sucess:true,message:'Fly activated'});
 });
 
 
+app.post('/deactivatefly', function(req,res){
 
-
-
+    shouldifly = false;
+    console.log("deactivate fly route hit");
+    console.log(shouldifly);
+     res.json({sucess:false,message:'Fly Deactivated'});
+});
 
 
 

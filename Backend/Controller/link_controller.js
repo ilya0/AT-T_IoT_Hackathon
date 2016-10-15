@@ -68,16 +68,6 @@ Linklist.findOneAndRemove({email:req.params.email},function(err,links){
 
 };
 
-// linkcontroller.update = function(req, res) {};
-
-// linkcontroller.show = function(req, res) {};
-
-// linkcontroller.edit = function(req, res) {};
-
-// linkcontroller.destroy = function(req, res) {};
-
-
-
 
 
 
