@@ -29,14 +29,14 @@ $("#Deactivatedronebutton").click(function(){
 
 // this is the function to send the post ajax reqest
 
-  function hitflyroute(titleboxvalue){
+  function hitflyroute(){
            $.ajax({ //ajax post request
             method: "POST", //post
             crossDomain: false,
             url: "/activatefly", //api url
-            data: {
-              link: linkaddressvalue,
-            }, //data is textboxinfo var but it needs to be in object format for the ajax data
+            // data: {
+            //   link: linkaddressvalue,
+            // }, //data is textboxinfo var but it needs to be in object format for the ajax data
             error: function( response ){ //if error do this
               console.log("There was a problemmo.");
             }
@@ -48,14 +48,14 @@ $("#Deactivatedronebutton").click(function(){
         });
   };
 
-   function hitkillroute(titleboxvalue){
+   function hitkillroute(){
            $.ajax({ //ajax post request
             method: "POST", //post
             crossDomain: false,
-            url: "/activatefly", //api url
-            data: {
-              link: linkaddressvalue,
-            }, //data is textboxinfo var but it needs to be in object format for the ajax data
+            url: "/deactivatefly", //api url
+            // data: {
+            //   link: linkaddressvalue,
+            // }, //data is textboxinfo var but it needs to be in object format for the ajax data
             error: function( response ){ //if error do this
               console.log("There was a problemmo.");
             }
