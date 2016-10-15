@@ -1,0 +1,20 @@
+/*stylesheet.css
+*/
+
+
+/*id is a hash*/
+#square{
+  width: 100px;
+  height: 100px;
+  background: black;
+  border: 10px black;
+
+}
+/*dot is a class*/
+.bluesquare{
+  width: 100px;
+  height: 100px;
+  background: blue;
+  border: 10px black;
+
+}
