@@ -2,6 +2,7 @@ var express       = require('express'); //linking the express module
 var app           = express(); //app instance of express
 var db            = require('./db'); // added db
 var bodyParser    = require('body-parser');
+
 var port          = process.env.PORT || 3000; //  sets the listining port
 var Linklist      = require('./model/link_model.js'); // model linking
 var links         = require('../Backend/Controller/link_controller.js'); //linking the controller links file
@@ -14,6 +15,9 @@ var http          = require('http'); // Im not sure if I need this I just cant g
 
 
 
+var shouldifly = false;
+
+
 
 
 // Use middleware
@@ -22,88 +26,21 @@ app.use( bodyParser.json() ); //parses the json
 app.use( bodyParser.urlencoded( { extended: false } ) ); // this is to use routes encoding
 app.use(express.static(path.join(__dirname, 'public'))); // for the serving up the public files
 
-// //routes to seperate out later
 
-// router.route('/')
-//   .get(links.index)
-//   .post(links.create);
-//   // .delete(links.destroy);
-
-// router.route('/show')
-//   .get(links.show)
-
-
-
-
-//test for just routing working without routering will display random arrays
+//get status of fly variable
 app.get('/', function(req,res){
-  var randarray = ["forest", "tree", "flower", "sky", "grass", "mountain"];
-  var messagedisplay = randarray[Math.floor((Math.random() * randarray.length))];
-  console.log(messagedisplay);
+  console.log(shouldifly);
   // res.json({message:messagedisplay});
   res.sendFile(path.join(__dirname + '/views/index.html')); //goes through path and then opens the view
 });
 
 
-//this is to add the link
-app.post('/links', function(req,res){
+//change var to fly, initate flight
+app.post('/activatefly', function(req,res){
 
-        var link = new Linklist();
-        link.title = req.body.title;
-        link.linkaddress = req.body.linkaddress;
-
-        link.save(function(err) {
-            if (err)
-                res.send(err);
-
-     res.json({sucess:true,message:'Link created! pow'});
-
-        });
-
-});
-
-// this is to get all the links
-app.get('/links', function(req,res){
-
-  Linklist.find( {}, function( err, links ) {
-      if ( err ) {
-          console.log( err );
-      } else {
-          console.log( links );
-      }
-  res.sendFile(path.join(__dirname + '/index.html'));
-
-  });
-});
-
-
-
-// this is to get all the links
-app.get('/showjson', function(req,res){
-
-  Linklist.find( {}, function( err, links ) {
-      if ( err ) {
-          console.log( err );
-      } else {
-          console.log( links );
-      }
-        res.json({links});
-  });
-});
-
-
-
-
-//this is to delete the link
-app.delete('/:linkaddress', function(req,res){
-
-Linklist.findOneAndRemove({linkaddress:req.params.linkaddress},function(err,links){
- if (err){
-    throw err;
-  }
-  res.json(links);
-  console.log("account removed");
-});
+    shouldifly = true;
+    console.log(shouldifly);
+     res.json({sucess:true,message:'variable changed to true'});
 
 
 });
@@ -116,7 +53,7 @@ Linklist.findOneAndRemove({linkaddress:req.params.linkaddress},function(err,link
 
 
 app.listen(port, function() {
-  console.log('bookmark app running on ', port);
+  console.log('drone security running on port', port);
 });
 
 module.exports = router;
