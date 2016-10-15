@@ -33,9 +33,7 @@ app.get('/', function(req,res){
 });
 
 app.get('/getstatus', function(req,res){
-
      res.json({message:shouldifly});
-
 });
 
 
