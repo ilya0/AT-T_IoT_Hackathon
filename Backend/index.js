@@ -32,6 +32,12 @@ app.get('/', function(req,res){
   res.sendFile(path.join(__dirname + '/Views/index.html')); //goes through path and then opens the view
 });
 
+app.get('/getstatus', function(req,res){
+
+     res.json({message:shouldifly});
+
+});
+
 
 //change var to fly, initate flight
 app.post('/activatefly', function(req,res){
