@@ -32,8 +32,8 @@ $("#Deactivatedronebutton").click(function(){
   function hitflyroute(){
            $.ajax({ //ajax post request
             method: "POST", //post
-            crossDomain: false,
-            url: "/activatefly", //api url
+            crossDomain: true,
+            url: "http://localhost:3000/activatefly", //api url
             // data: {
             //   link: linkaddressvalue,
             // }, //data is textboxinfo var but it needs to be in object format for the ajax data
@@ -51,8 +51,8 @@ $("#Deactivatedronebutton").click(function(){
    function hitkillroute(){
            $.ajax({ //ajax post request
             method: "POST", //post
-            crossDomain: false,
-            url: "/deactivatefly", //api url
+            crossDomain: true,
+            url: "http://localhost:3000/deactivatefly", //api url
             // data: {
             //   link: linkaddressvalue,
             // }, //data is textboxinfo var but it needs to be in object format for the ajax data

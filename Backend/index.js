@@ -1,11 +1,11 @@
 var express       = require('express'); //linking the express module
 var app           = express(); //app instance of express
-var db            = require('./db'); // added db
+// var db            = require('./db'); // added db
 var bodyParser    = require('body-parser');
 
 var port          = process.env.PORT || 3000; //  sets the listining port
-var Linklist      = require('./model/link_model.js'); // model linking
-var links         = require('../Backend/Controller/link_controller.js'); //linking the controller links file
+// var Linklist      = require('./model/link_model.js'); // model linking
+// var links         = require('../Backend/Controller/link_controller.js'); //linking the controller links file
 var express       = require('express'); // including theexpress file in this file
 var router        = express.Router(); //simplifying the router
 // var mongoose      = require('mongoose');
@@ -24,12 +24,12 @@ app.use( bodyParser.urlencoded( { extended: false } ) ); // this is to use route
 app.use(express.static(path.join(__dirname, 'public'))); // for the serving up the public files
 
 
-//get status of fly variable
+//this is the home page
 app.get('/', function(req,res){
   console.log(shouldifly);
 
   // res.json({message:messagedisplay});
-  res.sendFile(path.join(__dirname + '/views/index.html')); //goes through path and then opens the view
+  res.sendFile(path.join(__dirname + '/Views/index.html')); //goes through path and then opens the view
 });
 
 
@@ -39,6 +39,7 @@ app.post('/activatefly', function(req,res){
     shouldifly = true;
     console.log("activate fly route hit");
     console.log(shouldifly);
+
      res.json({sucess:true,message:'Fly activated'});
 });
 
@@ -48,6 +49,7 @@ app.post('/deactivatefly', function(req,res){
     shouldifly = false;
     console.log("deactivate fly route hit");
     console.log(shouldifly);
+
      res.json({sucess:false,message:'Fly Deactivated'});
 });
 
