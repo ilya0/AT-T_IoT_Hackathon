@@ -11,6 +11,8 @@ $("#Activatedronebutton").click(function(){
   console.log("activate drone button pressed");
   shouldifly = true;
   $("#dronetext").append("Drone activated"); // this needs to append the drone status
+  $("#dronetext").css("Drone activated"); // this needs to append the drone status
+
  console.log(shouldifly);
   hitflyroute();
 });
