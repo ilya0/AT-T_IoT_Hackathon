@@ -1,21 +1,7 @@
 # Iot Security drone
 ------
 Hackathon presented by AT&T
-
-Have an app idea or need an app built for your business?
-Join us for a special IoT focused Mobile App Hackathon, produced by the AT&T Developer Program. Hangout with us as we hack and build apps/mobile apps, get fed, compete for prizes across different categories and most importantly: meet new people and scout for teammates to work on new or current projects. We will have experts from AT&T and the local community onsite to assist with your development.
-You Bring...
-Your laptop, skills & ideas. Come with a collaborative, team-focused mindset and/or team-up in advance on Twitter/Facebook/Google+ via the #atthack hashtag. Whether you are a backend person, designer, entrepreneur, student, or just interested in tech, you are invited to attend this event. Every group needs a good balance of talent and your development skills are needed!
-We Supply...
-Quick presentations and code samples that help to bootstrap your hacking, food to keep you going, and caffeine to keep you awake. We will have technical mentors to assist you in building faster, smarter, and with new tools. We will also have loaner hardware on-site for you to use in your solutions.
-Arduino Boards: Sunfounder Super Kit with Uno R3 for Arduino (Documentation)
-RobotLinking 37 Sensor Kit
-Intel Edison (Documentation) + Grove - Starter Kit Plus Intel IoT Edition
-CanaKit Raspberry Pi 2 Complete Starter Kit (Monitor and keyboard not included)
-Raspberry Pi 2, Model B 1GB, Documentation (Monitor and keyboard not included)
-Photon Board Maker Kit (Documentation) 
-Event Schedule
-The following is a list of the weekend's agenda:  
+ 
 Day 1
 5:00PM - Kickoff event with dinner, networking and developer dating
 6:00PM - Speakers present
