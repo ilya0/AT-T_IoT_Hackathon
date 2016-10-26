@@ -2,17 +2,7 @@
 ------
 Hackathon presented by AT&T
  
-Day 1
-5:00PM - Kickoff event with dinner, networking and developer dating
-6:00PM - Speakers present
-7:00PM - Pitch idea and form teams
-8:00PM - Technical workshops
-12:00AM - Venue closes for the night; you may code offsite, but must leave the venue 
-Day 2
-9:00AM - The fun continues with coffee and breakfast served in the morning! Work with the teams from Day 1 to complete the app spec'd. Mentors will be available throughout the entire day to help you code your solution. App submissions will be accepted throughout the day with a deadline of 4PM.
-1:00PM - Lunch is served
-5:00PM - Deadline for team registration
-6:00PM - CODE FREEZE. Pitches start promptly at 6:15PM and are limited to three (3) minutes per team. PowerPoint presentations are NOT recommended!
+
 Prizes
 The following prizes are experiential and geared towards accelerating you towards a successful business as well as expanding your network and industry knowledge:
 Best Mobile App or IoT Solution Overall - $5,000
