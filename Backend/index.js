@@ -1,14 +1,11 @@
 var express       = require('express'); //linking the express module
 var app           = express(); //app instance of express
-// var db            = require('./db'); // added db
 var bodyParser    = require('body-parser');
 
 var port          = process.env.PORT || 3000; //  sets the listining port
-// var Linklist      = require('./model/link_model.js'); // model linking
-// var links         = require('../Backend/Controller/link_controller.js'); //linking the controller links file
+
 var express       = require('express'); // including theexpress file in this file
 var router        = express.Router(); //simplifying the router
-// var mongoose      = require('mongoose');
 var logger        = require( 'morgan' ); //logs the shit into console
 var path          = require('path');
 var http          = require('http'); // Im not sure if I need this I just cant get this fuckign http to link with the js and the css
