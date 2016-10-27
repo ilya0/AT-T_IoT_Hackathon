@@ -1,9 +1,7 @@
 var express       = require('express'); //linking the express module
 var app           = express(); //app instance of express
 var bodyParser    = require('body-parser');
-
 var port          = process.env.PORT || 3000; //  sets the listining port
-
 var express       = require('express'); // including theexpress file in this file
 var router        = express.Router(); //simplifying the router
 var logger        = require( 'morgan' ); //logs the shit into console
