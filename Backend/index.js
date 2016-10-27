@@ -11,7 +11,7 @@ var path          = require('path');
 var http          = require('http'); // Im not sure if I need this I just cant get this fuckign http to link with the js and the css
 
 
-
+// this is the global variable to allow the drone to fly or not
 var shouldifly = false;
 
 // Use middleware
