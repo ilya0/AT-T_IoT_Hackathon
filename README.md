@@ -3,16 +3,6 @@
 Hackathon presented by AT&T
  
 
-Prizes
-The following prizes are experiential and geared towards accelerating you towards a successful business as well as expanding your network and industry knowledge:
-Best Mobile App or IoT Solution Overall - $5,000
-Best Robotics or Mechatronics Solution - $2,500
-1st Place Best App from a Women Led Team - $1,000
-2nd Place Best App from a Women Led Team - $500
-Best Use of Nuance Technology - $2,000
-1st Place Best Use of IBM Watson - $2,000
-2nd Place Best Use of IBM Watson - $1,500
-*Top IOT solutions from this event will be eligibile for our national contest with a chance to win one of four (4) trips for two (2) representatives to Las Vegas, NV to compete for a Grand Prize of $20,000 in cash.
 Judging Criteria
 Apps will be judged based on the criteria below and weighted accordingly.
 33% Weight - Ability to clearly articulate what your app does
